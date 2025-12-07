@@ -1,5 +1,5 @@
 {
-  "name": "rafaelfigueroad-frontend",
+  "name": "aquila-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,6 +16,7 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-hot-toast": "^2.6.0",
+    "react-paginate": "^8.3.0",
     "react-router": "^7.9.3"
   },
   "devDependencies": {

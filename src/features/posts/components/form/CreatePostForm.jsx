@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import toast from 'react-hot-toast';
 import axios from 'axios';
-import API_BASE_URL from '../config/apiConfig.js'; 
+import API_BASE_URL from '../../../../config/apiConfig.js'; 
 
 const CreatePostForm = () => {
   const [title, setTitle] = useState('');
@@ -9,9 +9,6 @@ const CreatePostForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Título:", title);
-    console.log("Contenido:", content);
-
     if (!title.trim() || !content) {
       toast.error("Por favor, completa todos los campos.");
       return;

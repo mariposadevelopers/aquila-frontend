@@ -26,10 +26,11 @@ const LoginForm = () => {
       if (!email || !password) {
         toast.error("Ingresa correo y contraseña..."); 
         return; 
+      } 
+      const success = await signIn(credentials);  
+      if (success){
+        navigate('/home');
       }
-      const response = await signIn(credentials);  
-      console.log(response); 
-      navigate('/home');
     } catch (err){
 
       const errorMessage = err.response?.data?.message || "Error de inicio de sesión. Inténtalo de nuevo.";

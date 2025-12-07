@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../components/Navbar.jsx'
-import CreatePostForm from '../components/CreatePostForm.jsx'
+import Navbar from '../shared/components/Navbar.jsx'
+import CreatePostForm from '../features/posts/components/form/CreatePostForm.jsx'
 
 const CreatePage = () => {
 

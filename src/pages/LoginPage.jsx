@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LoginForm from '../components/LoginForm.jsx';
+import LoginForm from '../shared/components/LoginForm.jsx';
 const LoginPage = () => {
 
     const [showLoginForm, setShowLoginForm] = useState(false);

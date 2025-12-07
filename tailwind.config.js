@@ -9,7 +9,6 @@ export default {
   theme: {
     extend: {
       fontFamily : {
-        'inter': ['inter', ...defaultTheme.fontFamily.sans], 
         'clash': ['clash', ...defaultTheme.fontFamily.sans]
       }
     },
