@@ -15,7 +15,7 @@ const Navbar = () => {
     }
   }
   return (
-    <div data-theme="business" className="navbar bg-base-300 shadow-sm">
+    <div data-theme="business" className="z-10 navbar bg-base-300 shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">

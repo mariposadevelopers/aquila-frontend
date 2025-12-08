@@ -79,7 +79,7 @@ const handleSubmit = async(e) => {
                 <div className="flex justify-start mt-1">
                 <button
                     type='submit'
-                    className="d-flex font-clash text-lg text-white bg-orange-500 w-1/2 p-2 rounded-xl"
+                    className="d-flex font-clash text-lg text-white bg-orange-500 w-full p-2 rounded-xl"
                 >
                     Publicar comentario
                 </button>
