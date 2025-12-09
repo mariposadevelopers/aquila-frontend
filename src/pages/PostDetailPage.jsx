@@ -92,7 +92,7 @@ const PostDetailPage = () => {
         const res = await axios.delete(`${API_BASE_URL}/api/posts/${id}`, {withCredentials: true}); 
         if (res){
           toast.success("Publicación eliminada correctamente");
-          navigate("/home"); 
+          navigate("/"); 
         }
     } catch(error) {
       toast.error("Error al eliminar la publicación. Intente de nuevo.");
