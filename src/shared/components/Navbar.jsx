@@ -38,7 +38,7 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <Link className="font-clash p-1" to="/home">
+            <Link className="font-clash p-1" to="/">
               <li>Inicio</li>
             </Link>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-center">
-        <Link to="/home" className="text-xl font-clash font-bold">
+        <Link to="/" className="text-xl font-clash font-bold">
           RAFD
         </Link>
       </div>

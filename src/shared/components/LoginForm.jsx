@@ -29,7 +29,7 @@ const LoginForm = () => {
       } 
       const success = await signIn(credentials);  
       if (success){
-        navigate('/home');
+        navigate('/');
       }
     } catch (err){
 

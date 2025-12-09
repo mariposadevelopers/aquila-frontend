@@ -19,7 +19,7 @@ const PostDetailPage = () => {
   const { id } = useParams();
   const {isAuthenticated} = useAuth(); 
   const handleReturnRequest = () => {
-    navigate('/home');
+    navigate('/');
   }
 
   useEffect(() => {
