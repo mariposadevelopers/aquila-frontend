@@ -61,6 +61,10 @@ const PostDetailPage = () => {
   }
 
   const handleEditToggle = () => {
+    if(isEditing){
+      setPostTitle(post.title); 
+      setPostContent(post.content); 
+    }
     setIsEditing(prev => !prev);
   }
 
