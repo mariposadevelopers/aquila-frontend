@@ -40,8 +40,10 @@ const PostsListPage = () => {
       <Navbar></Navbar>
       <div className='posts-list'>
         <div className='p-5 lg:p-12'>
-          <h2 className='font-clash text-2xl sm:text-3xl font-semibold'>
-            Todas las publicaciones
+        
+          <h2 className='flex align-center items-center '>
+            <div className='w-4 h-3 lg:w-6 lg:h-5 mr-3 bg-[#FF8800]'/>    
+            <h5 className='font-clash text-xl sm:text-3xl font-semibold'>Todas las publicaciones</h5>
           </h2>
           {currentPosts.length > 0 && (
             <div className='flex flex-wrap gap-6 mt-7'>
