@@ -9,7 +9,7 @@ const ProtectedRoute = ({children}) => {
         return <h1 className='text-3xl font-clash'>Cargando...</h1>;
     }
     if (!isAuthenticated) {
-        return <Navigate to={"/login"} replace={true}></Navigate>
+        return <Navigate to={"/"} replace={true}></Navigate>
     }
     return children
 }
