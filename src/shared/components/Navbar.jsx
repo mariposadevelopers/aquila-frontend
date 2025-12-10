@@ -2,7 +2,7 @@ import React from "react";
 import { PlusIcon } from "lucide-react";
 import { Link } from "react-router";
 import { useAuth } from "../context/AuthContext.jsx";
-const Navbar = () => {
+const Navbar = ({showCreatePostButton = true}) => {
   const { isAuthenticated, logout } = useAuth();
   const handleLogoutRequest = async function () {
     try {
@@ -67,7 +67,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        {isAuthenticated && (
+        {isAuthenticated && showCreatePostButton && (
           <Link
             to="/create"
             className="border-none hover:bg-[#000000] hover:text-[#FF8800] bg-black text-[#FFFFFF] font-clash btn btn-primary flex items-center gap-2 rounded-md"
