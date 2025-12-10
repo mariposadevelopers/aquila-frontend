@@ -65,6 +65,12 @@ const PostDetailPage = () => {
   }
 
   const handleSavePostRequest = async () => {
+
+    if (!postTitle.trim() || !postContent.trim()){
+      toast.error("Por favor completa todos los campos."); 
+      return; 
+    }
+
     try {
       const updatedPostData = {
         title: postTitle,
